@@ -1,0 +1,27 @@
+{
+  "name": "neo4j",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && npm run clean && tsc -p src",
+    "start": "node ./target/index.js",
+    "dev": "nodemon app.ts",
+    "clean": "rimraf target/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neo4j/graphql": "^3.11.1",
+    "@neo4j/graphql-ogm": "^3.11.1",
+    "apollo-server": "^3.10.3",
+    "graphql": "^16.6.0",
+    "neo4j-driver": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
